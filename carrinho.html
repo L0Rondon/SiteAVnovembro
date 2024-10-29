@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/carrinho.css">
+</head>
+<header>
+    <nav class="Menu" id="Menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="galeria.html">Midia</a></li>
+            <li class="dropdown">
+                <a href="#Sobre" class="dropbtn">Sobre</a>
+                <ul class="dropdown-content">
+                    <li><a href="sobre.html">Informações</a></li>
+                    <li><a href="#InfoContat">Info. Contato</a></li>
+                </ul>
+            </li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <br>
+    <h1>Carrinho</h1>
+</header>
+
+<body>
+    <Main>
+
+        <section class="carrinho">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Miniatura</th>
+                        <th>Tamanho</th>
+                        <th>Cor</th>
+                        <th>Quantidade</th>
+                        <th>Preço Unitário</th>
+                        <th>Total</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td><img src="" alt=""></td>
+                        <td><label for="tamanho">Tamanho:</label>
+                            <select id="tamanho">
+                                <option></option>
+                                <option></option>
+                                <option></option>
+                            </select>
+                        </td>
+                        <td><label for="cor">Cor:</label>
+                            <select id="cor">
+                                <option>Creme</option>
+                                <option>Preto</option>
+                            </select>
+                        </td>
+                        <td><input type="number" value="1" min="1" class="quantidade"></td>
+                        <td class="preco-unitario"></td>
+                        <td class="preco-total"></td>
+                        <td><button class="remover-produto">Remover</button></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><img src=""
+                                alt=""></td>
+                        <td><label for="tamanho">Tamanho:</label>
+                            <select id="tamanho">
+                                <option></option>
+                                <option></option>
+                             
+                            </select>
+                        </td>
+                        <td><label for="cor">Cor:</label>
+                            <select id="cor">
+                                <option>Único</option>
+                            </select>
+                        </td>
+                        <td><input type="number" value="1" min="1" class="quantidade"></td>
+                        <td class="preco-unitario"></td>
+                        <td class="preco-total"></td>
+                        <td>
+                            <button class="remover-produto">Remover</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><img src=""
+                                alt=""></td>
+                        <td><label for="tamanho">Tamanho:</label>
+                            <select id="tamanho">
+                                <option></option>
+                                <option></option>
+                            
+                            </select>
+                        </td>
+                        <td><label for="cor">Cor:</label>
+                            <select id="cor">
+                                <option>Preto</option>
+                                <option>Branco</option>
+                            </select>
+                        </td>
+                        <td><input type="number" value="1" min="1" class="quantidade"></td>
+                        <td class="preco-unitario"></td>
+                        <td class="preco-total"></td>
+                        <td><button class="remover-produto">Remover</button></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><img src=""
+                                alt=""></td>
+                        <td><label for="tamanho">Tamanho:</label>
+                            <select id="tamanho">
+                                <option>37</option>
+                                <option>38</option>
+                                <option>39</option>
+                                
+                            </select>
+                        </td>
+                        <td><label for="cor">Cor:</label>
+                            <select id="cor">
+                                <option>Branco</option>
+                                <option>Preto</option>
+                            </select>
+                        </td>
+                        <td><input type="number" value="1" min="1" class="quantidade"></td>
+                        <td class="preco-unitario"></td>
+                        <td class="preco-total"></td>
+                        <td><button class="remover-produto">Remover</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="total-final">
+                <h3>Total Final: <span id="total-final">R$ 0,00</span></h3>
+            </div>
+        </section>
+
+    </Main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Sobre Nós</h4>
+                <p>Somos uma empresa dedicada a fornecer os produtos que desejar com alta qualidade.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="#InfoContat">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>Email: twdrop@gmail.com</p>
+                <p>Telefone: (19) 9000-9000</p>
+            </div>
+            <div class="footer-section">
+                <h4>Siga-nos</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                    <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TW drop. Todos os direitos reservados.</p>
+            </div>
+        </div>
+        <a href="#Menu" title="Titulo"><img src="assets/images/favicon.ico" alt="iconetopo">
+    </footer>
+
+    <script src="assets/js/carrinho.js"></script>
+</body>
+
+</html>

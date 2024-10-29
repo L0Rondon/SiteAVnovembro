@@ -1,39 +1,39 @@
 h1{
     text-align: center;
     color: goldenrod;
-}
-
-/*estilo nav*/
-nav{
+  }
+  
+  /*estilo nav*/
+  nav{
     background-color:midnightblue ;
     padding: 10px 0;/*espaçamento interno*/
-}
-nav ul{
+  }
+  nav ul{
     list-style-type: none;/*remove a marcação da lista*/
     margin: 0;
     padding: 0;
     display: flex;/*faz a lista ficar lado a lado(horizintal)*/
     justify-content: center;/*centraliza  (horizontal)*/
-}
-nav ul li{
+  }
+  nav ul li{
     position: relative;/*necessario para o posicionamento do dropdown*/
     margin: 0 15px;/*espaçamento entre os itens*/
-}
-nav ul li a{
+  }
+  nav ul li a{
     color:goldenrod;
     text-decoration: none;/*remove o sublinhado*/
     font-size: 18px;
     padding: 10px;
     display: block;/*torna o link clicavel em toda area*/
     transition: color 0.3s;/*transição suave para a mudança de cor*/
-}
-nav ul li a:hover{
+  }
+  nav ul li a:hover{
     color: gold;/*Cor do texto ao passar o mouse*/
-}
-
-/*Estilo dropdown*/
-
-nav ul li .dropdown-content {
+  }
+  
+  /*Estilo dropdown*/
+  
+  nav ul li .dropdown-content {
     display: none; /* Esconde o submenu inicialmente */
     position: absolute; /* Posiciona o submenu em relação ao item pai */
     background-color: midnightblue;
@@ -41,60 +41,73 @@ nav ul li .dropdown-content {
     z-index: 1; /* Garante que o submenu fique acima de outros elementos */
     min-width: 160px;
     padding: 0;
-}
-nav ul li .dropdown-content li {
+  }
+  nav ul li .dropdown-content li {
     margin: 0;
-}
-nav ul li .dropdown-content li a {
+  }
+  nav ul li .dropdown-content li a {
     padding: 10px 15px;
-}
-nav ul li .dropdown-content li a:hover {
+  }
+  nav ul li .dropdown-content li a:hover {
     background-color:royalblue; /* Cor de fundo ao passar o mouse sobre o submenu */
-}
-/* Exibe o submenu ao passar o mouse sobre o item principal */
-nav ul li:hover .dropdown-content {
+  }
+  /* Exibe o submenu ao passar o mouse sobre o item principal */
+  nav ul li:hover .dropdown-content {
     display: block;
-}
+  }
 
-.banner{
-    display: flex;
-    justify-self: center;
-    width: 1000px;
-    height: 720px;
-    border-radius: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 10px 15px;
-}
-
-/* Container da galeria usando Flexbox */
-.gallery-container {
-    display: flex; /* Ativa o Flexbox */
-    justify-content: space-around; /* Distribui os itens com espaço ao redor */
-    flex-wrap: wrap; /* Permite que os itens quebrem linha se não couberem */
-    padding: 20px;
-    width: 100%;
-    margin: auto; /*coloca o container para o meio automaticamente*/
-  }
-  .gallery-container:hover .gallery-item{
-    opacity: .5;
-  }
-  .gallery-container .gallery-item:hover {
-    opacity: 1
-  }
-  /* Cada item da galeria */
-  .gallery-item {
-    margin: 10px;
-    border: 2px solid rgb(232, 217, 194);
-    border-radius: 5px;
-    overflow: hidden;
-    width: 350px; /* Define uma largura fixa para cada item */
-    transition: all .3s;
+/* Estilo para o contêiner principal */
+.container {
+    display: flex; /* Define o contêiner como um flexbox */
+    gap: 20px; /* Espaçamento entre os cards */
+    flex-wrap: wrap; /* Permite que os cards quebrem linha se necessário */
+    justify-content: center;
   }
   
-  /* Estilos para as imagens */
-  .gallery-item img {
-    width: 100%; /* Garante que a imagem preencha todo o espaço disponível */
-    height: auto; /* Mantém a proporção da imagem */
+  /* Estilo para cada card */
+  .card-produto{
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Arredonda os cantos dos cards */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para dar um efeito de elevação */
+    flex: 1; /* Permite que os cards cresçam igualmente */
+    max-width: 300px; /* Define uma largura máxima para os cards */
+    display: inline-block;
+    text-align: center;
+  }
+  .card-produto img{
+    margin: 25px;
+      width: 200px;
+      height: 200px;
+      border-radius: 5px;
+  }
+  
+  /* Estilo para o título dos cards */
+  .card-produto h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color:black;
+  }
+  
+  /* Estilo para o parágrafo dos cards */
+  .card-produto p {
+    color: black;
+  }
+
+  .card-produto a{
+    color: black;
+    background-color: rgba(114, 185, 185, 0.67);
+  } 
+
+  button {
+    padding: 10px; /* Espaçamento interno */
+    background-color:midnightblue;
+    color:goldenrod; /* Cor do texto branco */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de pointer ao passar sobre o botão */
+    font-size: 16px; /* Tamanho da fonte */
   }
 
 /* Estilo do footer */

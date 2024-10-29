@@ -1,4 +1,15 @@
-h1{
+body{
+    background-color:white;
+}
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1{
     text-align: center;
     color: goldenrod;
 }
@@ -56,45 +67,70 @@ nav ul li:hover .dropdown-content {
     display: block;
 }
 
-.banner{
-    display: flex;
-    justify-self: center;
-    width: 1000px;
-    height: 720px;
-    border-radius: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 10px 15px;
+label {
+  margin-bottom: 5px; /* Espaçamento inferior */
+  font-weight: bold; /* Negrito para o texto */
 }
 
-/* Container da galeria usando Flexbox */
-.gallery-container {
-    display: flex; /* Ativa o Flexbox */
-    justify-content: space-around; /* Distribui os itens com espaço ao redor */
-    flex-wrap: wrap; /* Permite que os itens quebrem linha se não couberem */
-    padding: 20px;
+img{
+    margin: 25px;
+      width: 120px;
+      height: 120px;
+      border-radius: 360px;
+  }
+ /* Estiliza a tabela do carrinho */
+ table {
     width: 100%;
-    margin: auto; /*coloca o container para o meio automaticamente*/
-  }
-  .gallery-container:hover .gallery-item{
-    opacity: .5;
-  }
-  .gallery-container .gallery-item:hover {
-    opacity: 1
-  }
-  /* Cada item da galeria */
-  .gallery-item {
-    margin: 10px;
-    border: 2px solid rgb(232, 217, 194);
-    border-radius: 5px;
-    overflow: hidden;
-    width: 350px; /* Define uma largura fixa para cada item */
-    transition: all .3s;
+    border-collapse: collapse;
+    margin-bottom: 20px;
   }
   
-  /* Estilos para as imagens */
-  .gallery-item img {
-    width: 100%; /* Garante que a imagem preencha todo o espaço disponível */
-    height: auto; /* Mantém a proporção da imagem */
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color:   
+   #f4f4f4;
+    font-weight: bold;
+  }
+  
+  /* Estiliza o input de quantidade */
+  input.quantidade {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  /* Estiliza o botão de remover */
+  button.remover-produto {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #c0392b;
+  }
+
+  /* Estiliza o total final */
+.total-final {
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  .total-final h3 {
+    color: #333;
+  }
+  
+  #total-final {
+    color: #e74c3c;
+  }
+  
+  button.remover-produto:hover {
+    background-color: #ef3950;
   }
 
 /* Estilo do footer */
