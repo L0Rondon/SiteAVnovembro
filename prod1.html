@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto 1</title>
+    <link rel="stylesheet" href="assets/css/prod.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<header>
+    <nav class="Menu" id="Menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li class="dropdown">
+                <a href="#Sobre" class="dropbtn">Sobre</a>
+                <ul class="dropdown-content">
+                    <li><a href="sobre.html">Informações</a></li>
+                    <li><a href="#InfoContat">Info. Contato</a></li>
+                </ul>
+            </li>
+            <li><a href="login.html"><button class="btn-login">Faça login</button></a></li>
+            <li><a href="carrinho.html"><button>Carrinho</button></a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <main>
+        <section class="produto">
+            <div class="imagens-produto">
+                <img src="https://piet.com.br/cdn/shop/files/piet-online_0143.jpg?v=1727377367&width=2000"
+                    alt="Produto principal" class="imagem-principal" id="imagem-principal">
+                <div class="miniaturas">
+
+                    <img src="https://piet.com.br/cdn/shop/files/piet-online_0143.jpg?v=1727377367&width=2000"
+                        alt="Miniatura 1" class="miniatura" data-imagem="https://piet.com.br/cdn/shop/files/piet-online_0143.jpg?v=1727377367&width=2000">
+
+                    <img src="https://piet.com.br/cdn/shop/files/piet-online_0144.jpg?v=1727377367&width=2000" alt="Miniatura 2" class="miniatura" data-imagem="https://piet.com.br/cdn/shop/files/piet-online_0144.jpg?v=1727377367&width=2000">
+
+                    <img src="https://piet.com.br/cdn/shop/files/piet-online_0145.jpg?v=1727377428&width=2000" alt="Miniatura 3" class="miniatura" data-imagem="https://piet.com.br/cdn/shop/files/piet-online_0145.jpg?v=1727377428&width=2000">
+
+                    <img src="https://piet.com.br/cdn/shop/files/piet-online_0146.jpg?v=1727377367&width=2000"
+                        alt="Miniatura 4" class="miniatura"
+                        data-imagem="https://piet.com.br/cdn/shop/files/piet-online_0146.jpg?v=1727377367&width=2000">
+                </div>
+            </div>
+
+            <div class="detalhes-produto">
+                <h2>Zip-up Hoodie 600GSM - PIET</h2>
+                <p class="descricao">O Zip-up Hoodie 600GSM é confeccionado em moletom sem felpa com alta gramatura de 600 GSM, oferecendo durabilidade e conforto. A peça possui bolso canguru bipartido, puídos e um recorte bordado na parte frontal, além de taxas piramidais aplicadas no gorro e nas mangas.</p>
+                <p class="preco">R$ 399,99</p>
+
+                <form class="opcoes-compra">
+                    <label for="tamanho">Tamanho:</label>
+                    <select id="tamanho">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+                        <option>XG</option>
+                        <option>XGG</option>
+                    </select>
+                </form>
+                <label for="cor">Cor:</label>
+                <select id="cor">
+                    <option>Único</option>
+                </select>
+
+                <a href="carrinho.html"><button type="submit">Comprar</button></a>
+            </div>
+            </form>
+
+            <section class="comentarios">
+                <h3>Comentários dos clientes</h3>
+                <div class="comentario">
+                    <p><strong>Maria:</strong> ótimo produto, recomendo!</p>
+                </div>
+                <div class="comentario">
+                    <p><strong>João:</strong> Muito bom, superou minhas expectativas.</p>
+                </div>
+            </section>
+    </main>
+    <footer class="InfoContat" id="InfoContat">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Sobre Nós</h4>
+                <p>Somos uma empresa dedicada a fornecer os produtos que desejar com alta qualidade.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="#InfoContat">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>Email: contato@.com</p>
+                <p>Telefone: (99) 9000-9000</p>
+                <p>Endereço: Rua Irineu, 123, São Paulo, SP</p>
+            </div>
+            <div class="footer-section">
+                <h4>Siga-nos</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                    <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Só Boots. Todos os direitos reservados.</p>
+            </div>
+        </div>
+        <hr>
+        <a href="#Menu" title="Titulo"><img src="assets/images/favicon.ico" alt="iconetopo">
+    </footer>
+
+    <script src="assets/js/prod.js"></script>
+</body>
+
+</html>
